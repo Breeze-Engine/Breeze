@@ -1,0 +1,15 @@
+[submodule "dependencies/glew"]
+	path = dependencies/glew
+	url = https://github.com/nigels-com/glew
+[submodule "dependencies/libpng"]
+	path = dependencies/libpng
+	url = https://github.com/glennrp/libpng
+[submodule "dependencies/rapidjson"]
+	path = dependencies/rapidjson
+	url = https://github.com/miloyip/rapidjson
+[submodule "dependencies/stb"]
+	path = dependencies/stb
+	url = https://github.com/nothings/stb
+[submodule "dependencies/utfcpp"]
+	path = dependencies/utfcpp
+	url = https://github.com/nemtrif/utfcpp
