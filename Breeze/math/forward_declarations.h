@@ -1,7 +1,7 @@
 #pragma once
 
-#include "breezeinclude/conditional_compilation.h"
-#include "breezeinclude/export.h"
+#include "Breeze/include/conditional_compilation.h"
+#include "Breeze/include/export.h"
 
 BREEZE_SUPPRESS_WARNINGS_GENERATED_BY_STD_HEADERS_BEGIN
 #include <cstdint>
