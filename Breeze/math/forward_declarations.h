@@ -14,8 +14,8 @@ namespace breeze::detail {
     namespace Tags {
         struct DegreeTag;
         struct RadianTag;
-    }
-}
+    } 
+} 
 
 namespace breeze {
     template <typename T>
@@ -27,4 +27,24 @@ namespace breeze {
     class BoundingBox;
     class BoundingBox2D;
     class BoundingCircle;
-}
+    class BoundingFrustum;
+    class BoundingSphere;
+    class Color;
+    class Matrix2x2;
+    class Matrix3x2;
+    class Matrix3x3;
+    class Matrix4x4;
+    class Plane;
+    class Point2D;
+    class Point3D;
+    class Quaternion;
+    class Ray;
+    class Rectangle;
+    class Vector2;
+    class Vector3;
+    class Vector4;
+
+    enum class ContainmentType : std::uint8_t;
+    enum class PlaneIntersectionType : std::uint8_t;
+
+} 
