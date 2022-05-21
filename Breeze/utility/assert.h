@@ -1,6 +1,6 @@
 #pragma once
 
-#include "breeze/include/conditional_compilation.h"
+#include "breezeinclude/conditional_compilation.h"
 
 BREEZE_SUPPRESS_WARNINGS_GENERATED_BY_STD_HEADERS_BEGIN
 #include <cassert>
