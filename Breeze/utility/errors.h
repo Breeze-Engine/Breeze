@@ -20,3 +20,24 @@ namespace breeze {
     };
 
 } 
+
+namespace breeze::errors {
+
+    class BREEZE_EXPORT IOError final : public Error {
+    public:
+        std::errc Kind;
+        std::string Reason;
+        [[nodiscard]] std::string ToString() const noexcept override;
+        [[nodiscard]] std::unique_ptr<Error> Clone() const noexcept override;
+    };
+
+    [[nodiscard]] BREEZE_EXPORT std::unique_ptr<IOError>
+    New(std::errc kind, std::string&& reason) noexcept;
+
+    [[nodiscard]] BREEZE_EXPORT std::unique_ptr<Error>
+    New(std::string&& message) noexcept;
+
+    [[nodiscard]] BREEZE_EXPORT std::unique_ptr<Error>
+    Wrap(std::unique_ptr<Error>&& err, std::string&& message) noexcept;
+
+} 
