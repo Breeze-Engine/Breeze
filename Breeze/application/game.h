@@ -21,5 +21,11 @@ namespace breeze {
         Game& operator=(const Game&) = delete;
 
         virtual ~Game();
+
+        [[nodiscard]] virtual std::unique_ptr<Error> intiialize() = 0;
+
+        virtual void Update() = 0;
+
+        virtual void Draw() = 0;
     };  
 }
