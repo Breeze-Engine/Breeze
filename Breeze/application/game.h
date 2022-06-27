@@ -22,7 +22,8 @@ namespace breeze {
 
         virtual ~Game();
 
-        [[nodiscard]] virtual std::unique_ptr<Error> intiialize() = 0;
+        [[nodiscard]] virtual std::unique_ptr<Error> Initialize() = 0;
+
 
         virtual void Update() = 0;
 
