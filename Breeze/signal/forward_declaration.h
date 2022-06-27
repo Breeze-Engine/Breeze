@@ -14,15 +14,21 @@ namespace breeze::detail::signals {
     class SignalBody;
 
     template <typename Function>
-    class DelgateBody;
-}
+    class DelegateBody;
+} 
 
-namespace pomdog {
+namespace breeze {
+    template <typename Event>
     class EventQueue;
-    
+
     class Connection;
     class ScopedConnection;
+
     class ConnectionList;
+
+    template <typename Function>
     class Signal;
-    class Delegate
-}
+
+    template <typename Function>
+    class Delegate;
+} 
